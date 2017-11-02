@@ -1,6 +1,6 @@
 object HTTPSRVForm: THTTPSRVForm
-  Left = 711
-  Top = 55
+  Left = 309
+  Top = 37
   Width = 1209
   Height = 977
   Caption = 'WEB srv'
@@ -50,6 +50,73 @@ object HTTPSRVForm: THTTPSRVForm
       Height = 24
       TabOrder = 0
       Text = 'http://nucloweb.jinr.ru/kgu/Cache/get_data.php?callback=?'
+    end
+    object kgu1stdtxt: TStaticText
+      Left = 654
+      Top = 32
+      Width = 250
+      Height = 28
+      AutoSize = False
+      BevelKind = bkSoft
+      BorderStyle = sbsSunken
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -17
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+    end
+    object kgu1freqtxt: TStaticText
+      Left = 653
+      Top = 62
+      Width = 250
+      Height = 28
+      AutoSize = False
+      BevelKind = bkSoft
+      BorderStyle = sbsSunken
+      Caption = 'kgu1freqtxt'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -17
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+    end
+    object kgu2stdtxt: TStaticText
+      Left = 911
+      Top = 32
+      Width = 250
+      Height = 28
+      AutoSize = False
+      BevelKind = bkSoft
+      BorderStyle = sbsSunken
+      Caption = 'kgu2freqtxt'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -17
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+    end
+    object kgu2freqtxt: TStaticText
+      Left = 910
+      Top = 62
+      Width = 250
+      Height = 28
+      AutoSize = False
+      BevelKind = bkSoft
+      BorderStyle = sbsSunken
+      Caption = 'kgu2freqtxt'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = -17
+      Font.Name = 'MS Sans Serif'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 4
     end
   end
   object Memo2: TMemo
