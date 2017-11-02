@@ -1,6 +1,6 @@
 object HTTPSRVForm: THTTPSRVForm
-  Left = 300
-  Top = 46
+  Left = 711
+  Top = 55
   Width = 1209
   Height = 977
   Caption = 'WEB srv'
