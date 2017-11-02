@@ -1,0 +1,6 @@
+For Vista and Windows 7 OS user:
+
+DCON Utility needs to install and run it as administrator or may caused some error.
+About more detailed information , please refer to 
+ftp://ftp.icpdas.com/pub/cd/8000cd/napdos/driver/dcon_utility/faq_run_time_error.pdf
+or you can find this file in DCON Utility folder

@@ -1,0 +1,12 @@
+RegSvr32 /s COMCT232.OCX
+RegSvr32 /s COMCTL32.OCX
+RegSvr32 /s COMDLG32.OCX
+RegSvr32 /s Knob.OCX
+RegSvr32 /s MSWINSCK.OCX
+RegSvr32 /s NumLED.OCX
+RegSvr32 /s Odometer.ocx
+RegSvr32 /s RICHTX32.OCX
+RegSvr32 /s Selector.OCX
+RegSvr32 /s TABCTL32.OCX
+RegSvr32 /s Toggle.OCX
+RegSvr32 /s msinet.ocx

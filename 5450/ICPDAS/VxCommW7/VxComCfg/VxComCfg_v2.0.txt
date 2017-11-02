@@ -1,0 +1,96 @@
+
+     The VxComCfg.DLL exports a "VxC_ImportConfigFile" function. Users can 
+call this function to import a new configuration to replace the current 
+settings (system registry) from a specified file.
+
+     The VxComm Driver need to be stopped and restarted for loading new 
+configuration settings. So, please make sure you have closed all virtual 
+com ports first.
+
+     The DLL supports importing configuration file in v1.1 and v2.0 format
+(XML). But it is required to use v2.0 format(XML) for supporting the DS-700, 
+PDS-700, PDS-8000 and other new modules. 
+
+     The function calls are almost the same in v1.1 and v2.0, you just need 
+to select new configuration file.  The .cfg and .xml extension file name 
+indicates it is v1.1 or v2.0 configuration format.          
+
+// **************************************************************************
+// VxC_ImportConfigFile
+//
+// Parameters :
+//    pszConfigFile    : [Input]  The configuration file path and name.
+//
+//    pLastErrorLine   : [Output] Indicates which line in the file has error.
+//        In v2.0 format, it is changed to indicate the server index that 
+//        has error.
+//
+//    pwRebootRequired : [Output] Indicates this computer need or needn't to
+//        reboot after importing configuration file.
+//
+//        Usually it always return 0 to indicate the system needn't to reboot
+//        if the driver can be stopped and restarted successfully, else the
+//        parameter returns 1 to ask you reboot the system. 
+//                                 
+// Return :
+//        Returns error code indicating something error, or  
+//    returns 0 indicating no error.
+//
+// **************************************************************************
+EXPORTS WORD WINAPI 
+VxC_ImportConfigFile(
+    PCHAR pszConfigFile, 
+    PWORD pLastErrorLine, 
+    PWORD pwRebootRequired);
+
+
+Note: The VxComCfg.DLL doesn't support Windows 9X/ME yet!
+
+     For more information, please refer to the Sample_v2.0.xml & 
+VxComCfg.BAS.
+
+// **************************************************************************
+The configuration file is changed to version 2.0 and using XML format. Users
+can use plain text editor such as Notepad/PSPad..., or use XML editors such 
+as XML Notepad/XML Maker... to modify it.
+
+    XML Marker   (Freeware)
+    http://www.download.com/XML-Marker/3000-7241_4-10334011.html
+    
+    Microsoft XML NotePad 2007 (Freeware)
+    http://www.microsoft.com/downloads/details.aspx?familyid=72d6aa49-787d-4118-ba5f-4f30fe913628&displaylang=en
+    
+    PSPad - text and code editor (Freeware)
+    http://www.pspad.com/en/
+
+
+The new structure of configuration file is given as followings:         
+    <VxCommConfiguration>               // Root  
+    <Server>                            // Server
+        <IP>10.0.8.132</IP>                 // IP address
+        <ServerName>7188E2</ServerName>     // Server name
+        <Ports>2</Ports>                    // Number of ports
+        
+        <Options>                           // Server options
+            <TcpPortCmd>10000</TcpPortCmd>      // TCP/IP port for command
+            <TcpPortIo>9999</TcpPortIo>         // TCP/IP port for I/O
+            <ConnectionBroken>180</ConnectionBroken> // Connection-Broken time(Seconds)
+            <ConnectTimeout>5</ConnectTimeout>       // Connect Timeout(Seconds)
+            <KeepAliveTime>120</KeepAliveTime>       // Keep Alive Time(Seconds) 
+        </Options>
+        
+        <Port>                              // Port information
+            <PortName>Port1</PortName>          // Port name
+            <Mapping>COM10</Mapping>            // Port mapping
+            <FixedConfig>0</FixedConfig>        // Fixed Config (for baudrate)
+        </Port>
+        <Port>                              // Other ports
+            ...
+        </Port>        
+    </Server>
+    
+    <Server>                            // Other servers...
+        ...
+    </Server>
+    </VxCommConfiguration>
+

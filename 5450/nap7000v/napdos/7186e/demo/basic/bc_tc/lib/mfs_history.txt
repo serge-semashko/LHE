@@ -1,0 +1,79 @@
+/**********************************************************************/
+/* Update History for MFS_Vxxx.Lib                                    */
+/*                                                                    */
+/**********************************************************************/
+================================================================================
+Version 2.2.1 [Jul 31, 2013]
+Modify:
+    1. Improve the speed/performance of writing data to the file
+    
+Fixed Bug:
+    1. MFS does not free up the space that the deleted files occupied, 
+       so that the file-system would stop functioning when the disk space is full 
+    2. Fixed the bug where the mfs_Init() returns incorrect result when all disk space is occupied
+    3. mfs_WriteFile() may fail with an append operation on an existing file
+
+================================================================================
+Ver 2.1.9 [Dec 21, 2011] 
+
+================================================================================
+Ver 2.1.2 [May 27, 2009] by Liam
+Fix Bug:
+    1. mfs_ResetFlash: Set the operating status to normal (_File_NonOpen) in the NVARM
+================================================================================
+Ver 2.1.1 [2009,Feb,11] by Kevin
+    remove debug message
+================================================================================
+Ver 2.1.0 [2009,Jan,16] by Kevin
+Fix Bug
+    1. mfs_Init
+        If uPAC-7186EX-FD shotdowns while writing data to a file,
+        the file system will throw the bad data and keep the 
+        correct data of the file.
+        The bug is: the function doesn't work if the file is on disk B.
+        Been fixed.
+        
+    2. mfs_OpenFile
+        Doesn't return error code if opening more than 10 files. Been fixed.
+            
+    3. mfs_Puts 
+       It addes 0x0A(new line) to the end of original data buffer.
+       That will make memory problem. Been fixed.
+       For example:
+        char Data[5];
+        Data[0]='A'; Data[1]='B'; Data[2]='C'; Data[3]='D'; Data[4]=0;
+        mfs_Puts(file_handle,Data);
+        //Data[4] is changed to 0x0A.
+        
+    4. mfs_Gets
+       Its parameter description, max_size, says 
+       it stops when it reads max_size - 1 characters.
+       Old version stops at max_size -2 (should be -1).
+       Been fixed.
+       For example:
+        char Data[9]; //needs 8+1 bytes, the last byte is for Null terminator.
+        //Data in file is "ABCD".
+        mfs_Gets(file_handle,Data,5); //To get 4 bytes.
+        old version only gets "ABC" (total 3 bytes).
+    
+    5. mfs_Seek & mfs_Tell
+        Can not move pointer to correct location if the movement 
+        corrsses flash block.
+
+Improve read/write performance 
+    Test data:@32767 Bytes x 10
+    
+    Writing speed:
+        mfs_WriteFile:
+            147.5 KB/Sec (verification enabled) (default)
+            244.0 KB/Sec (verification disabled)
+        mfs_Puts:
+            142.1 KB/Sec (verification enabled) (default)
+            229.5 KB/Sec (verification disabled)
+        
+    Reading speed: 
+        mfs_ReadFile: 734.7 KB/Sec
+        mfs_Gets:     414.2 KB/Sec 
+================================================================================
+Ver 2.0.2 [2008,Oct,??] by Liam
+    First Release Version.

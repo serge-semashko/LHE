@@ -1,0 +1,37 @@
++===============================================+
+|       DCON Utility    Version : 5.2.5         
+|       Release Date    9 May 2014             
++===============================================+
+
+New Features:
+1.Added support for the VP-6641 to allow I/O modules 
+  to be searched and configured.
+
+New Modules Supported:
+1.Added support for DALI modules.
+2.Added support for ZT-2024, ZT-2055, and ZT-2015 modules.
+3.Added support for LC-221, LC-131, and GPS-721-MRTU Modules.
+4.Added support for M-7041D and M-7022A modules.
+5.Added support for I-87028V2, I-87002, and I-87028VW modules.
+
+Modified Functions:
+1.Added support for multiple type code functions 
+  for I-7017 series modules that firmware version B2.9 or later.
+
+Issues Fixed:
+1.Fixed an issue where a module could be found by the DCON Utility 
+  using either the N,8,1 or N,8,2. (only N,8,1 should be shown).
+2.Fixed an issue with M-7084 modules which caused 
+  an incorrect Frequency value to be displayed.
+3.Fixed an issue with I-87019RW modules which caused 
+  an incorrect value to be displayed when using DCON firmware.
+4.Fixed an issue with Modbus modules which caused error code 63 
+  to be displayed when the module had been disconnected 
+  Timeout error code 15 should be shown when Module disconnected.
+
+
+
+About more detailed release history and Information , please refer 
+ftp://ftp.icpdas.com.tw/pub/cd/8000cd/napdos/driver/dcon_utility
+
+Copyright @ 2014 by ICP DAS Co., Ltd. All rights are reserved.

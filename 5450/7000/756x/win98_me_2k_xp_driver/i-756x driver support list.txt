@@ -1,0 +1,6 @@
+I-756x = I-7560, I-7561, I-7563
+
+Driver_2K_XP support list: Win2K and WinXP
+Driver_98_ME support list: Win98 and WinMe
+I-756X DriverInstaller support list: Win98, WinMe, Win2K and WinXP
+

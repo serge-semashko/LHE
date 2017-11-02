@@ -1,0 +1,55 @@
+
+// **************************************************************************
+The configuration file is changed to version 2.0 and using XML format. The DLL
+supports import and export XML format (configuration file v2.0), but supports 
+v1.1 for import only.  
+
+It's required to use XML format for supporting new DS-700/PDS-700 and PDS-8000 
+modules.
+
+Please refer to the VxComCfg_v2.0.txt for more information.
+// **************************************************************************
+
+
+     The VxComCfg.DLL exports a "VxC_ImportConfigFile" function. Users can call
+this function to import a new configuration from a specified file.
+
+     The original (7188E/8000E) servers setting will be removed before importing
+a new configuration. 
+
+     The VxComm Driver will be stopped and re-started to use new settings after 
+importing. So, please make sure you have closed all using virtual com ports 
+before importing a new configuration.
+     
+
+// **************************************************************************
+// VxC_ImportConfigFile
+//
+// Parameters :
+//    pszConfigFile    : [Input]  The configuration file path and name.
+//
+//    pLastErrorLine   : [Output] Indicates which line in the file has error.
+//
+//    pwRebootRequired : [Output] Indicates this computer need or needn't to
+//                                reboot after importing configuration file.
+// Return :
+//        Returns error code indicating something error, or  
+//    returns 0 indicating no error.
+//
+// Notes :
+//        In Windows NT/2K/XP, users needn't to reboot the 
+//    computer if everything is OK! But in Windows 9x/ME, users
+//    may need to reboot it after change the settings.
+//
+// **************************************************************************
+EXPORTS WORD WINAPI 
+VxC_ImportConfigFile(
+    PCHAR pszConfigFile, PWORD pLastErrorLine, 
+    PWORD pwRebootRequired);
+
+
+Note: The VxComCfg.DLL doesn't support Windows 9X/ME yet!
+
+     For more information, please refer to the Sample11.Cfg & 
+VxComCfg.BAS.
+

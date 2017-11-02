@@ -1,0 +1,30 @@
+/*
+The documet is a configure file to let the Utility send specific 
+command string to the moudles and log the communication packages
+to the report file.
+The parameters are:
+[COM],[Protocol],[Baudrate],[Checksum],[Command],[Left trim],[Right trim],[Compare Ref.],[Time interval]
+
+[COM]:           1 ~ 255
+[Protocol]:	     0 ==> DCON protocol
+		         1 ==> Modbus RTU protocol 				 
+[Baudrate]:      1200,2400,4800,9600,19200,38400,57600,115200
+[Checksum]:      0 ==> disable
+                 1 ==> enable
+[Command]:       command string that will be sent to the I/O modules.
+[Left trim]:     trims how many bytes of the left of the received string.
+[Right trim]:    trims how many bytes of the right of the received string.
+[Compare Ref.]:  referance string used to compare the trimmed response string.
+[Time interval]: time interval to run the command.
+                 unit: ms
+                 
+Please change it to suit your hardware configuration.
+[Oct,9,2003] by Kevin
+
+Note 1: The config file is used from DCON Utility 4.2.7.
+Note 2: The document is termniated by one '*' and one '/'.
+Example:    
+    1,1,9600,0,"01 46 05 01",0,0,"02 46 05 01 0A 00 00 00 01 00 00 EA CB ",500
+    1,0,115200,0, "$02M",0,0,"!017024",500    
+*/    
+    1,0,9600,0, "$01M",0,0,"!017024",500

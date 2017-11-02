@@ -1,0 +1,721 @@
+
+What's New
+
+==========================================
+Nov.07, 2014 v2.12.11
+
+Fix: A potential crash bug on driver for flow-control function
+     is fixed.
+
+Chg: Hide BOOTP message/records.
+
+==========================================
+Oct.09, 2014 v2.12.10
+
+Add: Supports XON/XOFF and CTS/RTS flow-control for iDS-700 series.
+
+Fix: DSR signal status may wrongly reported. Fixed.
+
+==========================================
+Jun.24, 2014 v2.12.09
+
+Fix: Configuration program may crash when restart driver.
+     Fixed in this version.
+
+Fix: Terminal program may crash when receiving large data. 
+     Fixed in this version.
+
+Fix: The Diagnostic program may terminate unexpected. 
+     Fixed in this version.     
+
+==========================================
+May.20, 2014 v2.12.08
+
+Add: Supports new model I-7550-E.
+
+==========================================
+Apr.24, 2014 v2.12.07 (Win XP ~ Win 8)
+
+Add: Supports EnableWriteBuffer/AutoFlushTime parameters in the Import/Export 
+     functions of the VxComm Utility.
+
+Fix: The port1 of slot1 for PDS-800 is not remapped correctly in VxComm Utility. 
+     Fixed. 
+
+Fix: Supports dual-LAN when searching modules.
+
+
+
+==========================================
+==========================================
+
+Jan.22, 2014 v2.12.06 (Last version that supports the Windows 2000)
+
+Fix: Fix a potential crash problem under Win7 Pro x64. 
+
+==========================================
+Dec.26, 2013 v2.12.05
+
+Add: Supports iDS-700/100 new models.
+
+==========================================
+Dec.11, 2013 v2.12.04
+
+Fix: Fix a potential crash problem under Win7 Pro x64. 
+
+==========================================
+Oct.30, 2013 v2.12.03
+
+Add: Supports iDS-7000/1000 new models.
+
+==========================================
+May.24, 2013 v2.12.02
+
+Add: Supports RMV-511/512 new model.
+     RMV-511/512: COM1=RS-485.
+
+==========================================
+Mar.22, 2013 v2.12.01
+
+Add: Supports I-7547 and RMV-760-MTCP new models.
+     I-7547:       COM1=RS-232, COM2=RS-232 with fixed baudratre/data format.
+     RMV-760-MTCP: COM1=RS-232, COM2=RS-485/422.
+
+==========================================
+Mar.07, 2013 v2.12.00
+
+Add: Supports Write-Buffer to collect small packets into big one.
+
+==========================================
+Jan.29, 2013 v2.11.13
+
+Add: Supports GRP-520/520P, RMV-531. 
+     GRP-520  (COM1=RS-485, COM2=3-wire RS-232)
+	  GRP-520P (COM1=RS-485, COM2=3-wire RS-232, COM3=3-wire RS-232)
+	  RMV-531  (COM1=3-wire RS-232, COM2=RS-485)
+	  
+==========================================
+Dec.27, 2012 v2.11.12
+
+Add: Supports ZT-2570/ZT-2571 model.
+     COM1=Disabled.
+     COM2=Virtual COM.
+
+==========================================
+Jul.20, 2012 v2.11.10
+
+Add: Add option in port configuration page allowing user to diable the 
+     purge command. Then the TX/RX buffer will not be cleared by PurgeComm.
+
+==========================================
+Jul.12, 2012 v2.11.09
+
+Change: Set the CTS/DSR status ON as default.
+
+==========================================
+May.10, 2012 v2.11.08
+
+Add: Supports M2M-520-AV model.
+
+==========================================
+Feb.09, 2012 v2.11.07
+
+Fix: The mask function does not work correctly, and causes some application 
+     busy on this. Fixed. 
+
+==========================================
+Jan.06, 2011 v2.11.06
+
+Fix: The driver may have potential crash problem on few multi-core computer.
+     Add some more synchronization to prevent problem.
+
+==========================================
+Dec.20, 2011 v2.11.05
+
+Change: The M2M-710D is now supporting 2 serial ports.
+
+
+
+==========================================
+==========================================
+
+May.12, 2011 v2.11.04
+
+*** This is the last update for the Windows NT 4.0 driver. *******
+
+Add: Supports new model GT-543, tDS-724 and tDS-734.
+
+Add: Add registry setting for selecting skip or return when serial port 
+     open errors.
+      
+     Double-click the IgnoreOpenErrors.reg file for skipping errors.
+     Double-click the RejectOpenErrors.reg file for reject when errors (default).
+     Note: Need to restart the driver after change the configuration.
+
+==========================================
+Nov.18, 2010 v2.11.03
+
+Add: Supports new model name PDS-5105D-MTCP. 
+
+==========================================
+Aug.30, 2010 v2.11.02
+
+Fix: The terminal program of the VxComm Utility now supports sending 0x00 
+     char for Modbus RTU command.
+
+==========================================
+Aug.23, 2010 v2.11.01
+
+Change: The driver allows users to set the baurate and data format on 
+        RS-485 port 2, while other settings on this port are not allowed. 
+        Now, we change to rule to enable more settings such as CTS/RTS, 
+        PurgeComm... etc. 
+      
+        This would be usefult to clear the output/input buffer when there 
+        is something wrong. 
+
+        Ps. Other ports has no this limitation.
+      
+==========================================
+Aug.13, 2010 v2.11.00
+
+Fix : Sometimes, there may have data shift problem when running 
+      the VxComm driver in a heavy loading and multi-core 
+      (or dual-core) computer.
+      
+      The potential problem is fixed in this version, and it is 
+      recommended to update the driver if you got above issue.
+
+==========================================
+Jul.09, 2010 v2.10.01
+
+Change: TDS-700 series is changed to tDS-700 series.
+      Supports the tDS-700 series tiny device server.
+
+==========================================
+Mar.24, 2010 v2.10.00
+
+Add : Supports 64-bit Windows XP/2008/Vista/7.
+      Tested OK with 
+      64-bit Windows XP Professional x64 Edition Version 2003 SP2, and 
+      64-bit Windows Vista.
+      64-bit Windows 2008.
+      64-bit Windows 7.
+
+==========================================
+Jan.18, 2010 v2.09.13
+
+Add : Supports ZB-257x series.
+      Supports TDS-722/725/732/735 series.
+      Supports M2M-710D/711D/712D series.
+      Supports 7540 module. 
+
+==========================================
+Dec.18, 2009 v2.09.12
+
+Add : Supports PDS-220FC/FCS/FT series.
+
+==========================================
+Nov.26, 2009 v2.09.11
+
+Fix : Fix the port setting function for TDS-700.
+      Add data bits 5 and 6, add stop bit 2, add parity Mark and Space.
+      TDS-700 supports data bit 5 ~7, stop bit 1 ~ 2, parity None ~ Space;
+      while 7188E/PDS-700 series's port 1/2 supports data bit 7 and 8 only.
+      
+Fix : Modify the PDS_Diag.exe diagnostic program to support TDS-700, 
+      PPDS-700-MTCP/IP67, M2M-7255 and M-4132 series.          
+
+==========================================
+Nov.10, 2009 v2.09.10
+
+Add : Supports ET-87Pn series.
+      It provides 1 serial port and 1 port I/O.
+      It does not supports I-8K serial modules.
+
+==========================================
+Oct.21, 2009 v2.09.09
+
+Change: The M2M-7255 model is renamed to M2M-720-A.
+        Modify the utility to support new model M2M-720-A.
+
+==========================================
+Sep.14, 2009 v2.09.08
+
+Add : Supports PPDS-700-IP67, PPDS-700-MTCP, TDS-700 new models.
+      Supports PDS-745i, M-4132, M2M-7255 new models.
+
+Fix : Enable "Set IP/Mask/Gateway" button for all other PDS.
+      The function may still failed if the firmware is too old to support 
+      the configuration method.
+
+Add : Supports resizing main window.      
+
+==========================================
+May.06, 2009 v2.09.07
+
+Add : Supports CxC-540 new model.
+      Not released version.
+
+==========================================
+Feb.03, 2009 v2.09.06
+
+Fix : Fix a driver bug when mapping virtual COM port to COM256.
+      Max. devices and ports are 256.
+      
+Fix : Fix a driver bug when processing unicode string, this may 
+      cause some system blue screen. Fixed in this version.
+      
+Add : Add "Remove All Servers" feature on the menu item.      
+        
+
+==========================================
+Nov.13, 2008 v2.09.05
+
+Fix : The auto-reconnect function does not work correct for 1-port DS-700.
+      This problem is fixed on this version.
+      
+Fix : Terminal function may select wrong COM port name sometimes.
+      Fix this small issue.      
+
+==========================================
+Oct.07, 2008 v2.09.04
+
+Fix : Terminal function sometimes cannot send CR (0x0D) automatically.
+      Fixed it in this version.
+      
+Add : Supports PDS-775 new model (for PDS-775-A).
+
+==========================================
+Sep.05, 2008 v2.09.03
+
+Fix    : Add-servers feature.
+         Copy the start-IP to end-IP when start-ip is changed by user.
+         This reduce typing errors.
+         
+         Support "Cancel" button when add multiple servers.
+         
+Add    : Add PDS diagnostic program.
+         Get system information and VxComm driver status.
+         Ping host IP address.
+         Verify command port connection.
+         Verify data ports connections.
+         Save log to file.                    
+         Supports PDS-700, DS-700, 7188EN, PDS-800, I8KE series.
+
+==========================================
+Sep.01, 2008 v2.09.02
+
+Add    : Supporting PDS-800 series.
+         Supporting iPAC8K series.
+         
+Add    : Supporting Redundant IP Address.
+         Set 0.0.0.0 to disable the redundant IP feature.
+         When the IP address is not available for connect, the driver will try
+         next IP address.         
+
+Fix    : Terminal.exe utility program continue shows error message box 
+         when TCP connecting failed. Fixed.
+         
+         This program may select wrong com port in the UI. Fixed.
+         For example, we selects COM3 in VxComm Utility but the 
+         Terminal.exe selects COM39 by default.
+
+Fix    : VxComm Utility may show multiple Port I/O when the device name 
+         has more ports assigned that out the default number of ports. 
+         Fixed.
+
+Fix    : UDPSearch.DLL supports module name length upto 15 bytes only.
+         Change to 30 bytes for supporting PDS-800:n-mmmmmmmm modulized models.
+         
+Fix    : Fix COM1 mapping problem. 
+         
+         Note, you have to disable both COM1 and COM2 on your PC BIOS. If you
+         keep PC COM2 enabled, the system driver will also create COM1 oject.
+         This cause VxComm Driver failed to create it's own Virtual COM1 on
+         the system.                            
+
+==========================================
+Jul.09, 2008 v2.09.01
+
+Fix    : Number of COM ports on a single PDS that large than 32 may cause 
+         driver crash. Fixed.
+         
+Fix    : When 7188EN sends out packet with wrong CRC checksum, this may 
+         cause VxComm Driver failed to get all data when the packet is 
+         resend. This also cause receiving operation is stopped untill
+         restore the connection. Fixed.         
+
+Change : Change the Keep-Alive thread to wakeup every 2 seconds and then 
+         check status of connections. This causes a better response time 
+         since it reopen the connection as soon as possible when it is 
+         broken.
+         
+Add    : Supports ET-6000 and ET2-6000 modules.         
+
+==========================================
+Apr.09, 2008 v2.09.00
+
+Add    : Creates driver service on system database without reboot computer
+         after install the VxComm Driver.
+
+Add    : Supports UDP Search feature.
+         Test with PDS-782 and VCOMM firmware v3.2.30[11/30/2007].
+
+Add    : Add VxComm Utility into exception list of Windows XP firewall.
+         This allows VxComm Utility can search 7188E/PDS devices without
+         Windows firewall blocking.
+
+Add    : Support Windows Vista32. 
+         Add manifest in the utility to require Administrator right for
+         accessing registry. This is the Vista UAC limitation.         
+
+Add    : Supports multiple windows for COM or TCP/IP testing. 
+
+Add    : Supports 7186EX, 8441, 8841 devices.
+         Supports DS-700 and PDS-700 series.
+        
+Add    : Add "Web Configuration" button.
+         Add "Ping Server" for using system "Ping.exe" to ping the device.
+         
+Add    : Add "Batch Add Servers" feature for mass devices installation.   
+         Supports Timeout/Connection Broken Time/Keep-Alive Time settings 
+         on Advanced Options.
+         Supports virtual COM ports mapping automatically.
+
+         Remove "Add Server" feature on the main form.
+         Uses the "Batch Add Servers" feature instead.                                 
+
+Change : Change the max. number of servers to 255.
+         The max. number of COM ports is still 256.
+
+Change : Configuration file is changed to XML format.
+
+Change : Enable user to set Fixed-config for all ports at a time.
+         Enable user to set un-map for all ports at a time.
+         Arrange the Server-options and Device-information in a single dialog.
+         Arrange the Port-mapping and Port-configure in a single dialog. 
+
+Fix    : Fix a potential timing issue on a Dual-CPU (or multi-CPU) system.
+         The old driver may stop the OS when disconnecting sockets.
+
+Fix    : 7188E4's DCD/RI signals does not show correct status. Fixed.
+
+Remove : Remove SendTcp.exe from the installation.         
+
+==========================================
+Dec.20, 2005 v2.08.11
+
+Fix : Some PC may not work when the devices up to 33 pcs. Fix it. Max. number 
+      of devices should be 100 pcs.
+      
+Change : Change the default Keep-Alive time from 7 seconds to 120 seconds 
+      (2 minutes, about 1/3 of 7188E's default system timeout-- 300 seconds 
+      or 5 minutes). This reduces the communications, especially good in a 
+      large network environment.
+
+==========================================
+Nov.15, 2005 v2.08.10
+
+Fix : VxComm Utility may not work on Windows NT 4.0 when the server data 
+      is empty. Fix it!
+
+==========================================
+Mar.09, 2005 v2.08.09
+
+(Tested with I-8831 + I-8114 x 4 pcs + VC8_3301.exe Feb.24, 2005.)
+
+Change : Using a union structure to contains COM port number, FixedConfig
+         , SlotIndex (0~8), PortIndex(1-16) informations. 
+         
+         These new structure is useful for I-8000 to work with serial
+         port modules such as I-8114...etc.
+
+Add    : Add the ICP DAS Logo.
+
+==========================================
+Dec.30, 2004 v2.08.07
+
+Fix : When removing a server from the utility, the related virtual com ports
+      does not shown in the available com port list. Fix it for UI operations
+      conveniently.
+
+==========================================
+Dec.28, 2004 v2.08.06
+
+(Tested with I-8831 + I-8114 x 4 pcs + VC8_3223.exe Dec.28, 2004.)
+
+Fix : The DCD/RI/DTR/DSR/CTS/RTS signals are not correct when port number > 9.
+      Fix it.
+Fix : Import/Export features does not work correctly for 8KEx, I8000E-xx and 
+      PDS8000-xx devices. Fix it.
+
+==========================================
+Dec.24, 2004 v2.08.05
+
+Add : Supports I8000E-xx, L8000E-xx and PDS8000-xx Device Servers with I-8114 
+      multi-port serial modules.
+Add : Shows related information when re-starting the driver.
+
+==========================================
+Aug.19, 2004 v2.08.03
+
+Add : Supports 28800 bps baud rate.
+
+Add : Supports DSR/RI/DCD signal detecting. (Not H/W flow control)
+      Supports DTR signal setting.
+      These should works with the VxComm Server v3.2.01[07/20/2004] or newer one.
+      
+Move: Remove the Help files from the VxComm installation package, and place the
+      help files in CD and web site standalone. 
+
+==========================================
+Apr.27, 2004 v2.08.02
+
+Add : Supports 8KE4 and 8KE8 devices.
+
+Change : Rename the "Port 7000" to "Port I/O".
+
+==========================================
+Mar.30, 2004 v2.08.00
+
+Add : Supports more menu items, such as "Remove Server", "Server Options",
+      "Port Mapping" and "Port Configuration".
+      
+Add : Adds a simple COM port test feature to send/receive data to/from a 
+      specified COM port.
+
+Add : Adds a simple TCP port test feature to send/receive data to/from a
+      specified TCP port.                  
+
+==========================================
+Sep.25, 2003 v2.07.01
+
+Add : Add MENU to contain more features.
+      
+      "Import Configuration" : Import configuration from a file.
+      
+      "Export configuration" : Export configuration into a file.
+      
+      System Information : Shows ...
+          OS version, System directory, numbers of CPU installed, CPU type.
+          VxComm Driver version, file size, file time, driver status.
+      
+      Device Information : Show ...
+          Server name, firmware version, MiniOS7 version, Max. sockets, 
+          System Timeout, share mode.
+          Gateway, sub-net Mask, MAC address.
+          
+      The above information is useful for trouble-shooting.
+
+Change : Use menu item to replace the "Import / Export" button. 
+         (remove the button.)
+
+==========================================
+Sep.19, 2003 v2.07.00
+
+Add : Supports Dual-CPU computer. 
+      VxComm Driver has been tested OK under Windows NT 4.0, Windows 
+      2000/XP and Windows Server 2003 with the Dual-CPU computer.
+
+Add : VxComm Utility supports Baud rate and Data format configuration
+      via TCP connection.
+      
+Add: Supports "Use 7188E/8000E current settings (Fixed Configuration)".
+     By using this feature, the VxComm Driver won't change the Baudrate, 
+     data format and CTS/RTS control mode of the 7188E/8000E device. This 
+     improves the stability and less conflicts with each client.
+
+Add : Add "Timeout", "Port7000 port" and "Command TCP port" parameters 
+      when configuring the 7188E/8000E virtual COM ports.
+
+Fix : Get current baud rate settings before test "02" command. This
+      prevents the different baud rate setting conflicts.
+
+==========================================
+Mar.06, 2003 v2.06.12
+
+Add : Add a "Connect-Timeout" parameter in the "Server Options", 
+      this can let user to adjust the connect-timeout value.
+      The default timeout is 5000 ms.
+
+==========================================
+Nov.08, 2002 v2.06.07
+
+( Tested with VCOM3009.exe 11/6/2002 firmware. )
+
+Fix : The VxComm Driver failed to send a specified character when 
+      application calling TransmitCommChar() API. Fix it.
+
+Add : Supports 7188E7 device. (7188EX + X512)
+       
+==========================================
+Oct.22, 2002 v2.06.05
+
+Fix : The CMD port (port 10000) is lost when the first client
+      is closed. Fix it!
+
+Add : Add VxComCfg.DLL and VB5 sample program to support calling
+      the Import function from users's program. User can dynamically
+      imports a specified configuration from a file. 
+
+      For more information, please refer to the sample.cfg and 
+      the VxComCfg folder.
+
+==========================================
+Sep.25, 2002 v2.06.04
+
+Change : Removes default settings (1200bps, 8N1...) from VxComm Driver.
+      Users have to make a correct setting before communications. 
+      This prevents a short time conflicts during the COM port 
+      setting by 2nd (or more) client.
+
+Change : The default value of ConnectionBroken is changed to 180,000ms.
+      ( = 180 seconds = 3 minutes )
+
+      Change the parameter from 20 seconds to 180 seconds, this 
+      reduces the times of reconnecting.
+
+Change : VxComm Driver will reconnect the specified COM port, if there
+      has no sendings/Receivings in the past ConnectionBroken time.
+      (Last version just do it when connections are broken. )
+
+==========================================
+Sep.11, 2002 v2.06.03
+
+(Tested with VCOM3009.exe 2002/09/05 firmware.)
+
+Improve : Improves the auto-reconnect mechanism to let it works 
+          better.
+
+==========================================
+Aug.20, 2002 v2.06.01
+
+Add : VxComm Utility supports "Import" and "Export" features. It 
+      is used to export the current settings into a configuration 
+      file, and to import settings from a configuration file.
+
+      For more information, please refer to the "sample.cfg" file.
+
+==========================================
+Aug.05, 2002 v2.06.00
+
+Add : Suuports CTS/RTS flow control.
+      (7188E firmware must be VCOM3007.exe 2002/07/26 or newer.)
+
+      +------------------------+-------------------------------+ 
+      | Win32                  | 7188E                         |
+      +------------------------+-------------------------------+ 
+      | RTS_CONTROL_DISABLE    | Mode 1, Default RTS low       |
+      | RTS_CONTROL_ENABLE     | Mode 1, Default RTS high      |
+      | RTS_CONTROL_HANDSHAKE  | Mode 3, Library auto-control  |
+      | RTS_CONTROL_TOGGLE     | N/A                           |
+      +------------------------+-------------------------------+
+
+      When writting, if CTS_CONTROL_HANDSHAKE is set, the driver
+      will wait until the CTS line is high or timeout occurred.
+      ( It's about 9 seconds for waiting CTS line to high. )
+
+==========================================
+May.21, 2002 v2.05.01
+
+Fix : MSComm.OCX always waiting for I/O STATUS_SUCCESS even 
+      any error occursed. Fix driver to support it and support
+      the EVENT_ERR.
+
+Fix : The connection status sometimes become invalid. Try to
+      close and re-open it.
+
+==========================================
+May.02, 2002 v2.05
+
+Add : Supports 8430/8830 + 8142 * 4 (total 11 COM ports)
+
+Add : Supports Break-Signal sending from VxComm Driver(PC) to 
+      VxComm Server(7188E). The version of VxComm Server(7188E) 
+      should greater than (or equal) ver3.0.06.
+
+==========================================
+Dec.25, 2001 v2.03
+
+Change : VxComm Driver/VxComm Utility/SendTcp programs support 
+         the I-8430/I-8830 port 1, 3 and support the I-8431
+         /I-8831 port 1, 3, 4.
+
+==========================================
+Dec.15, 2001 v2.02
+
+Change : Dynamic creates the TCP connections when need, so it 
+         will be faster to open the first port.
+
+Change : Port list in the VxComm Utility enables the full row 
+         selection. Users can operating the VxComm Utility more
+         easily.
+
+Change : Remove the IP-Address control from the VxComm Utility. 
+         
+         This control is included in the IE 4.0 or later. If the
+         computer system doesn't provide this control, it will 
+         cause the VxComm Utility fails. Remove this one to 
+         prevent the problems.
+
+==========================================
+Dec.03, 2001 v2.01
+
+Fix : Fix the driver to supports up to COM256, test OK!!
+
+==========================================
+Nov.28, 2001 v2.00 Beta 7
+
+Fix  : Supports the EV_TXEMPTY events for WaitCommEvent().
+
+Fix  : VxComm Utility get the version number and check the 02 and 
+       03 command when connecting to the 7188E server.
+      
+       VxComm Utility fails to filter the ComNoIO that is used by 
+       8430. Fix it.
+
+==========================================
+Nov.01, 2001 v2.00 Beta 4
+
+
+Add : Supports Auto-Reconnection mechanism when the connection
+      -broken. VxComm Utility supports the Keep-Alive-Time, 
+      ConnectionBroken settings.
+
+Fix : Installation package keeps the registry settings of the 
+      last VxComm driver settings.
+
+Fix : Use 02, 03 command to change the baudrate, data format 
+      without saving to EEPROM. (Last version use 06, 07 command 
+      to change and save.)
+
+      This new version of VxComm Driver (PC) must works with newer 
+      version of VxComm Server (7188E).
+
+Change : Add 0x0D char to the end of command.
+
+Add : VxComm Utility, add the "Check Duplicate" and "Check Server" 
+      options.
+
+      Check Duplicate : This option will check the IP address if 
+                        duplicated with the exist servers.
+      Check Server    : This option will connect to the IP address 
+                        and get the server's name. 
+
+Fix : Changes the number of session (array) from 3 to 9, this 
+      supports up to 8 ports (7188E8).
+
+Fix : VxComm Utility checks for the used com ports.
+
+Change : Change the MAX_PORT to 256 COM ports, but the MAX_SERVER
+         still setting to 100.
+
+Add : Supports 8430, 8431, 8830, 8831 main boards.
+
+==========================================
+Aug.31, 2001 v1.04.01
+
+Fix : Support EV_RXCHAR and EV_RXFLAG events for WaitCommEvent()
+
+Note : BSOD stands for "Blue Screen of Death" of MS Windows.

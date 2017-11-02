@@ -1,0 +1,394 @@
+<!-- saved from url=(0022)http://internet.e-mail -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Software Development For 8000 Series MCU Using C Language </title>
+
+<script language="JavaScript">
+<!-- Begin
+function menuLink(linkLoc,target_frame){
+if(linkLoc!=""){
+open(linkLoc, target_frame);
+}
+}
+// End -->
+</script>
+
+<script language="javascript">
+
+function Buildkey(num) {
+var ctr=1;
+document.CodeForm.subtype.selectedIndex=0;
+document.CodeForm.subtype.options[0]=new Option("----Model--------------","");
+
+/*Embedded Controller*/ 
+if(num=="1") { document.CodeForm.subtype.options[ctr]=new Option("----4Slot I/O----",""); ctr=ctr+1; }
+if(num=="1") { document.CodeForm.subtype.options[ctr]=new Option("I-8410","http://www.icpdas.com/products/8000/i-8410-i-8810.htm"); ctr=ctr+1; }
+if(num=="1") { document.CodeForm.subtype.options[ctr]=new Option("I-8411","http://www.icpdas.com/products/8000/i-8411-i-8811.htm"); ctr=ctr+1; }
+if(num=="1") { document.CodeForm.subtype.options[ctr]=new Option("----8Slot I/O----",""); ctr=ctr+1; }
+if(num=="1") { document.CodeForm.subtype.options[ctr]=new Option("I-8810","http://www.icpdas.com/products/8000/i-8410-i-8810.htm"); ctr=ctr+1; }
+if(num=="1") { document.CodeForm.subtype.options[ctr]=new Option("I-8811","http://www.icpdas.com/products/8000/i-8411-i-8811.htm"); ctr=ctr+1; }
+/*Internet/Ethernet*/ 
+if(num=="2") { document.CodeForm.subtype.options[ctr]=new Option("----4Slot I/O----",""); ctr=ctr+1; }
+if(num=="2") { document.CodeForm.subtype.options[ctr]=new Option("I-8430","http://www.icpdas.com/products/8000/i-8430-i-8830.htm"); ctr=ctr+1; }
+if(num=="2") { document.CodeForm.subtype.options[ctr]=new Option("I-8431","http://www.icpdas.com/products/8000/i-8431-i-8831.htm"); ctr=ctr+1; }
+if(num=="2") { document.CodeForm.subtype.options[ctr]=new Option("I-8431-80","http://www.icpdas.com/products/8000/i-8431-80-i-8831-80.htm"); ctr=ctr+1; }
+if(num=="2") { document.CodeForm.subtype.options[ctr]=new Option("----8Slot I/O----",""); ctr=ctr+1; }
+if(num=="2") { document.CodeForm.subtype.options[ctr]=new Option("I-8830","http://www.icpdas.com/products/8000/i-8430-i-8830.htm"); ctr=ctr+1; }
+if(num=="2") { document.CodeForm.subtype.options[ctr]=new Option("I-8831","http://www.icpdas.com/products/8000/i-8431-i-8831.htm"); ctr=ctr+1; }
+if(num=="2") { document.CodeForm.subtype.options[ctr]=new Option("I-8831-80","http://www.icpdas.com/products/8000/i-8431-80-i-8831-80.htm"); ctr=ctr+1; }
+/*CAN bus*/
+if(num=="3") { document.CodeForm.subtype.options[ctr]=new Option("----4Slot I/O----",""); ctr=ctr+1; }
+if(num=="3") { document.CodeForm.subtype.options[ctr]=new Option("I-8420","http://www.icpdas.com/products/8000/i-8420.htm"); ctr=ctr+1; }
+if(num=="3") { document.CodeForm.subtype.options[ctr]=new Option("I-8421","http://www.icpdas.com/products/8000/i-8421.htm"); ctr=ctr+1; }
+if(num=="3") { document.CodeForm.subtype.options[ctr]=new Option("----8Slot I/O----",""); ctr=ctr+1; }
+if(num=="3") { document.CodeForm.subtype.options[ctr]=new Option("I-8820 ","http://www.icpdas.com/products/8000/i-8420.htm"); ctr=ctr+1; }
+if(num=="3") { document.CodeForm.subtype.options[ctr]=new Option("I-8821","http://www.icpdas.com/products/8000/i-8421.htm"); ctr=ctr+1; }
+/*ISaGRAF*/
+if(num=="4") { document.CodeForm.subtype.options[ctr]=new Option("----4Slot I/O----",""); ctr=ctr+1; }
+if(num=="4") { document.CodeForm.subtype.options[ctr]=new Option("I-8417","http://www.icpdas.com/products/8000/i-8417.htm"); ctr=ctr+1; }
+if(num=="4") { document.CodeForm.subtype.options[ctr]=new Option("I-8437","http://www.icpdas.com/products/8000/i-8417.htm"); ctr=ctr+1; }
+if(num=="4") { document.CodeForm.subtype.options[ctr]=new Option("I-8437-80","http://www.icpdas.com/products/8000/i-8417.htm"); ctr=ctr+1; }
+if(num=="4") { document.CodeForm.subtype.options[ctr]=new Option("----8Slot I/O----",""); ctr=ctr+1; }
+if(num=="4") { document.CodeForm.subtype.options[ctr]=new Option("I-8817","http://www.icpdas.com/products/8000/i-8417.htm"); ctr=ctr+1; }
+if(num=="4") { document.CodeForm.subtype.options[ctr]=new Option("I-8837","http://www.icpdas.com/products/8000/i-8417.htm"); ctr=ctr+1; }
+if(num=="4") { document.CodeForm.subtype.options[ctr]=new Option("I-8837-80","http://www.icpdas.com/products/8000/i-8417.htm"); ctr=ctr+1; }
+/*Modbus/TCP*/
+if(num=="5") { document.CodeForm.subtype.options[ctr]=new Option("----4Slot I/O----",""); ctr=ctr+1; }
+if(num=="5") { document.CodeForm.subtype.options[ctr]=new Option("I-8431-MTCP","http://www.icpdas.com/products/8000/i-8430-mtcp.htm"); ctr=ctr+1; }
+if(num=="5") { document.CodeForm.subtype.options[ctr]=new Option("I-8431-80-MTCP","http://www.icpdas.com/products/8000/i-8430-mtcp.htm"); ctr=ctr+1; }
+if(num=="5") { document.CodeForm.subtype.options[ctr]=new Option("----8Slot I/O----",""); ctr=ctr+1; }
+if(num=="5") { document.CodeForm.subtype.options[ctr]=new Option("I-8831-MTCP","http://www.icpdas.com/products/8000/i-8430-mtcp.htm"); ctr=ctr+1; }
+if(num=="5") { document.CodeForm.subtype.options[ctr]=new Option("I-8831-80-MTCP","http://www.icpdas.com/products/8000/i-8430-mtcp.htm"); ctr=ctr+1; }
+/*Matlab*/
+if(num=="6") { document.CodeForm.subtype.options[ctr]=new Option("----4Slot I/O----",""); ctr=ctr+1; }
+if(num=="6") { document.CodeForm.subtype.options[ctr]=new Option("I-8438-G","http://www.icpdas.com/products/8000/i-8438.htm"); ctr=ctr+1; }
+if(num=="6") { document.CodeForm.subtype.options[ctr]=new Option("----8Slot I/O----",""); ctr=ctr+1; }
+if(num=="6") { document.CodeForm.subtype.options[ctr]=new Option("I-8838-G","http://www.icpdas.com/products/8000/i-8438.htm"); ctr=ctr+1; }
+document.CodeForm.subtype.length=ctr;
+document.CodeForm.subtype.options[0].selected=true;
+} 
+</script> 
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 14px;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style3 {
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	color: #990000;
+}
+a:link {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	color: #003366;
+	text-decoration: underline;
+}
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<link href="http://www.icpdas.com/products/images/ICP%20DAS.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+a:visited {
+	text-decoration: none;
+	color: #0000FF;
+}
+a:active {
+	text-decoration: none;
+}
+<!--
+body {
+	background-image:    url('html/images/bg_back-01.gif');
+}
+-->
+-->
+</style>
+<link href="http://www.icpdas.com/products/images/hsinchu.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style12 {	color: #000066;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style13 {color: #CC3300}
+.style15 {	font-size: 15px;
+	color: #FF3333;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style17 {	font-size: 24px;
+	font-weight: bold;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style20 {font-family: Arial, Helvetica, sans-serif}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style46 {
+	color: #0000FF;
+	font-size: 18px;
+}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" onload="MM_preloadImages('http://www.icpdas.com/products/images/bt_17_on.gif','http://www.icpdas.com/products/images/bt_16_on.gif','http://www.icpdas.com/products/images/bt_18_on.gif','http://www.icpdas.com/products/images/bt_13_on.gif','http://www.icpdas.com/products/images/bt_12_on.gif','http://www.icpdas.com/products/images/bt_11_on.gif','http://www.icpdas.com/products/images/bt_10_on.gif','http://www.icpdas.com/products/images/bt_01_on.gif','http://www.icpdas.com/products/images/bt_02_on.gif','http://www.icpdas.com/products/images/bt_03_on.gif','http://www.icpdas.com/products/images/bt_04_on.gif','http://www.icpdas.com/products/images/bt_05_on.gif','http://www.icpdas.com/products/images/bt_06_on.gif','http://www.icpdas.com/products/images/bt_07_on.gif','http://www.icpdas.com/products/images/bt_08_on.gif','http://www.icpdas.com/products/images/bt_09_on.gif')" bgcolor="#ffffff" marginheight="0" marginwidth="0">
+<div align="left">
+  <table align="center" border="0" cellpadding="0" cellspacing="0" height="656" width="770">
+    <tbody><tr>
+      <td bgcolor="#666666" height="60" width="3"></td>
+      <td colspan="2" background="http://www.icpdas.com/products/images/title_background.gif" bgcolor="#ffffff" height="60" valign="top"><table border="0" cellpadding="0" cellspacing="0" height="95" width="768">
+          <tbody><tr>
+            <td height="21" width="15"><font face="Arial"><a name="top"></a>
+            </font></td>
+            <td rowspan="4" align="center" height="95" valign="middle" width="103">
+            <font face="Arial"><a href="http://www.icpdas.com/products/PAC/i-8000/http://www.icpdas.com/index.htm">
+            <img src="http://www.icpdas.com/products/images/spaces.gif" usemap="#MapMap" border="0" height="1" width="1"></a></font></td>
+            <td align="center" valign="middle" width="427"><font face="Arial"><img src="http://www.icpdas.com/products/images/spaces_002.gif" height="1" width="1"></font></td>
+            <td colspan="4" align="right" valign="top" width="224"><span class="black"><span class="site-map style3">
+            <font onmouseover="MM_showHideLayers('Products','','hide','Support','','hide','Sisinfo','','hide')" face="Arial"><a href="http://www.icpdas.com/sevices/support.htm">
+            <font face="Arial"><img src="http://www.icpdas.com/products/images/bt_17_off.gif" name="Image161111" id="Image16" onmouseover="MM_swapImage('Image161111','','http://www.icpdas.com/products/images/bt_17_on.gif',1)" onmouseout="MM_swapImgRestore()" border="0" height="16" width="99"></font></a></font></span></span><font face="Arial"><a href="http://www.icpdas.com/map/map.htm"><img src="http://www.icpdas.com/products/images/bt_16_off.gif" name="Image151111" id="Image15" onmouseover="MM_swapImage('Image151111','','http://www.icpdas.com/products/images/bt_16_on.gif',1)" onmouseout="MM_swapImgRestore()" border="0" height="16" width="66"></a><a href="http://search.icpdas.com/PM_online/index.asp" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image32','','http://www.icpdas.com/products/images/bt_18_on.gif',1)"><img src="http://www.icpdas.com/products/images/bt_18_off.gif" name="Image32" border="0" height="16" width="58"></a></font></td>
+          </tr>
+          <tr>
+            <td height="21">　</td>
+            <td rowspan="2" valign="middle">　</td>
+            <td colspan="4" rowspan="2">　</td>
+          </tr>
+          <tr>
+            <td height="21">　</td>
+          </tr>
+          <tr>
+            <td height="21">　</td>
+            <td colspan="5" align="right" valign="bottom"><font face="Arial"><a href="http://www.icpdas.com/certification/certification.htm"><img src="http://www.icpdas.com/products/images/bt_13_off.gif" name="Image131111" id="Image13" onmouseover="MM_swapImage('Image131111','','http://www.icpdas.com/products/images/bt_13_on.gif',1)" onmouseout="MM_swapImgRestore()" border="0" height="19" width="124"></a><a href="http://www.icpdas.com/app_stories/application%20story.htm"><img src="http://www.icpdas.com/products/images/bt_12_off.gif" name="Image121111" id="Image12" onmouseover="MM_swapImage('Image121111','','http://www.icpdas.com/products/images/bt_12_on.gif',1)" onmouseout="MM_swapImgRestore()" border="0" height="19" width="162"></a><a href="http://www.icpdas.com/faq/faq.htm"><img src="http://www.icpdas.com/products/images/bt_11_off.gif" name="Image111111" id="Image11" onmouseover="MM_swapImage('Image111111','','http://www.icpdas.com/products/images/bt_11_on.gif',1)" onmouseout="MM_swapImgRestore()" border="0" height="19" width="72"></a><a href="http://www.icpdas.com/news/new_list.htm"><img src="http://www.icpdas.com/products/images/bt_10_off.gif" name="Image101111" id="Image10" onmouseover="MM_swapImage('Image101111','','http://www.icpdas.com/products/images/bt_10_on.gif',1)" onmouseout="MM_swapImgRestore()" border="0" height="19" width="87"></a></font></td>
+          </tr>
+          <tr>
+            <td colspan="7" height="21"><font face="Arial"><a href="http://www.icpdas.com/index.htm" onmouseover="MM_swapImage('Image14111','','http://www.icpdas.com/products/images/bt_01_on.gif',1)" onmouseout="MM_swapImgRestore()"><img src="http://www.icpdas.com/products/images/bt_01_off.gif" name="Image14111" id="Image1" border="0" height="21" width="69"></a><a href="http://www.icpdas.com/company/Company.htm"><img src="http://www.icpdas.com/products/images/bt_02_off.gif" name="Image21111" id="Image2" onmouseover="MM_swapImage('Image21111','','http://www.icpdas.com/products/images/bt_02_on.gif',1)" onmouseout="MM_swapImgRestore()" border="0" height="21" width="120"></a><a href="http://www.icpdas.com/products/Products-list.htm" onmouseover="MM_swapImage('Image31111','','http://www.icpdas.com/products/images/bt_03_on.gif',1)" onmouseout="MM_swapImgRestore()"><img src="http://www.icpdas.com/products/images/bt_03_off.gif" name="Image31111" id="Image3" border="0" height="21" width="81"></a><a href="http://www.icpdas.com/download/download-list.htm" onmouseover="MM_swapImage('Image41111','','http://www.icpdas.com/products/images/bt_04_on.gif',1)" onmouseout="MM_swapImgRestore()"><img src="http://www.icpdas.com/products/images/bt_04_off.gif" name="Image41111" id="Image4" border="0" height="21" width="87"></a><a href="http://www.icpdas.com/distributors/distributors.htm" onmouseover="MM_swapImage('Image51111','','http://www.icpdas.com/products/images/bt_05_on.gif',1)" onmouseout="MM_swapImgRestore()"><img src="http://www.icpdas.com/products/images/bt_05_off.gif" name="Image51111" id="Image5" border="0" height="21" width="90"></a><a href="http://www.icpdas.com/partners/Partners.htm" onmouseover="MM_swapImage('Image61111','','http://www.icpdas.com/products/images/bt_06_on.gif',1)" onmouseout="MM_swapImgRestore()"><img src="http://www.icpdas.com/products/images/bt_06_off.gif" name="Image61111" id="Image6" border="0" height="21" width="81"></a><a href="http://www.icpdas.com/training/training.htm"><img src="http://www.icpdas.com/products/images/bt_07_off.gif" name="Image71111" id="Image7" onmouseover="MM_swapImage('Image71111','','http://www.icpdas.com/products/images/bt_07_on.gif',1)" onmouseout="MM_swapImgRestore()" border="0" height="21" width="81"></a><a href="http://www.icpdas.com/activity/activity.htm"><img src="http://www.icpdas.com/products/images/bt_08_off.gif" name="Image81111" id="Image8" onmouseover="MM_swapImage('Image81111','','http://www.icpdas.com/products/images/bt_08_on.gif',1)" onmouseout="MM_swapImgRestore()" border="0" height="21" width="72"></a><a href="http://www.icpdas.com/catalog/catalog.htm"><img src="http://www.icpdas.com/products/images/bt_09_off.gif" name="Image91111" id="Image9" onmouseover="MM_swapImage('Image91111','','http://www.icpdas.com/products/images/bt_09_on.gif',1)" onmouseout="MM_swapImgRestore()" border="0" height="21" width="87"></a></td>
+          </tr>
+        </tbody></table>
+          <MAP name=MapMap><AREA 
+        shape=CIRCLE coords=2040,22903,21840 
+        href="ftp://ftp.icpdas.com/pub/cd/8000cd/napdos/8000/Compare_Controller.htm#"><AREA 
+        shape=RECT coords=3672,3752,4080,4367 
+        href="ftp://ftp.icpdas.com/pub/cd/8000cd/napdos/8000/Compare_Controller.htm#"><area shape="rect" coords="-4,3,60,54" href="http://www.icpdas.com/index.htm"></MAP></td>
+      <td align="center" bgcolor="#666666" height="60" valign="top" width="3"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#666666" height="547" width="3"></td>
+      <td style="" align="left" valign="top" width="3"><div align="center">
+        </div></td>
+      <td align="left" bgcolor="#ffffff" valign="top" width="767"><table border="0" cellpadding="0" cellspacing="0" height="1609" width="767">
+        <tbody><tr>
+          <td height="15" valign="top" width="15"></td>
+          <td valign="top" width="439"></td>
+          <td width="309"></td>
+          <td align="center" valign="top" width="4"></td>
+        </tr>
+        <tr>
+          <td height="175" valign="top">　</td>
+          <td colspan="3" valign="top"><div align="center" class="style17">Error Code Explanation for Software Develop Toolkit</div>
+            <div align="center" class="style20"> </div>
+            <hr>
+            <p class="H8 style13 style15" align="right">&nbsp;</p>
+            <table width="350" height="360" border="1">
+              <tr>
+                <td width="103"><div align="center">Error Code: </div></td>
+                <td width="231"><div align="center">Explanation: </div></td>
+                </tr>
+              <tr>
+                <td><div align="center">0</div></td>
+                <td><div align="center">No Error</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">1</div></td>
+                <td><div align="center">Function Error</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">2</div></td>
+                <td><div align="center">COM Port Error</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">3</div></td>
+                <td><div align="center">Baud Rate Error</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">4</div></td>
+                <td><div align="center">Data Bit Error</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">5</div></td>
+                <td><div align="center">Stop Bit Error</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">6</div></td>
+                <td><div align="center">Parity Error</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">7</div></td>
+                <td><div align="center">CheckSum Error</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">8</div></td>
+                <td><div align="center">Com Port Not Open</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">9</div></td>
+                <td><div align="center">Send Thread Create Error</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">10</div></td>
+                <td><div align="center">Send Command Error</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">11</div></td>
+                <td><div align="center">Read Com Port Status Error</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">12</div></td>
+                <td><div align="center">String Check Error</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">13</div></td>
+                <td><div align="center">Command Error</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">14</div></td>
+                <td><div align="center">x</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">15</div></td>
+                <td><div align="center">TimeOut</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">16</div></td>
+                <td><div align="center">x</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">17</div></td>
+                <td><div align="center">Module ID Error</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">18</div></td>
+                <td><div align="center">Add Channel Error</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">19</div></td>
+                <td><div align="center">Under Range</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">20</div></td>
+                <td><div align="center">Exceed Range</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">21</div></td>
+                <td><div align="center">InvalidateCounterNo</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">22</div></td>
+                <td><div align="center">Invalidate Counter Value</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">23</div></td>
+                <td><div align="center">Invalidate Gate Mode</div></td>
+                </tr>
+              <tr>
+                <td height="29"><div align="center">24</div></td>
+                <td><div align="center">Invalidate Channel Number</div></td>
+                </tr>
+              <tr>
+                <td><div align="center">25</div></td>
+                <td><div align="center">Com Port In Use</div></td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td height="2" valign="top"></td>
+          <td colspan="3" background="http://www.icpdas.com/products/images/dot-02.gif" height="2" valign="top"></td>
+        </tr>
+        <tr>
+          <td height="14" valign="top"><font face="Arial"><img src="http://www.icpdas.com/products/images/spaces.gif" height="1" width="15"></font></td>
+          <td valign="top">&nbsp;</td>
+          <td align="right">&nbsp;</td>
+          <td align="center" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+          <td height="60" valign="top">　</td>
+          <td colspan="2" class="C1" valign="top">&nbsp;</td>
+          <td align="center" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+          <td height="60" valign="top">　</td>
+          <td colspan="2" class="C1" valign="top">&nbsp;</td>
+          <td align="center" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+          <td class="C1" height="60" valign="top">　</td>
+          <td colspan="2" class="C1" valign="top">&nbsp;</td>
+          <td align="center" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+          <td height="16" valign="top"><font face="Arial">&nbsp;</font></td>
+          <td colspan="2" valign="top">&nbsp;</td>
+          <td align="center" valign="top">　</td>
+        </tr>
+      </tbody></table></td>
+      <td bgcolor="#666666" width="3"></td>
+    </tr>
+    <tr>
+      <td bgcolor="#666666" height="25" width="3"></td>
+      <td colspan="2" class="style1" align="center" bgcolor="#666666" height="25" valign="middle"><span class="C2">
+      <font face="Arial">Copyright&#169;1983-2004 ICP DAS Co., Ltd. All Rights Reserved</font></span></td>
+      <td bgcolor="#666666" height="25" width="3"></td>
+    </tr>
+  </tbody></table>
+</div>
+</body></html>

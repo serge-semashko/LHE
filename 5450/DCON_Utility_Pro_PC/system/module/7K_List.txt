@@ -1,0 +1,95 @@
+i7KList.Add("7002");
+i7KList.Add("7005");
+i7KList.Add("7011");
+i7KList.Add("7011D");
+i7KList.Add("7011P");
+i7KList.Add("7011PD");
+i7KList.Add("7012");
+i7KList.Add("7012D");
+i7KList.Add("7012F");
+i7KList.Add("7012FD");
+i7KList.Add("7013");
+i7KList.Add("7013D");
+i7KList.Add("7015");
+i7KList.Add("7015P");
+i7KList.Add("7017");
+i7KList.Add("7017A5");
+i7KList.Add("7017C");
+i7KList.Add("7017F");
+i7KList.Add("7017FC");
+i7KList.Add("7017HL");
+i7KList.Add("7017R");
+i7KList.Add("7017RC");
+i7KList.Add("7017Z");
+i7KList.Add("7018");
+i7KList.Add("7018BL");
+i7KList.Add("7018P");
+i7KList.Add("7018R");
+i7KList.Add("7018Z");
+i7KList.Add("7019");
+i7KList.Add("7019R");
+i7KList.Add("7019Z");
+i7KList.Add("7021");
+i7KList.Add("7022");
+i7KList.Add("7024");
+i7KList.Add("7024R");
+i7KList.Add("7033");
+i7KList.Add("7033D");
+i7KList.Add("7041");   // 14 DI
+i7KList.Add("7041D");
+i7KList.Add("7042");   // 13 DO
+i7KList.Add("7042D");
+i7KList.Add("7043");   // 16 DO
+i7KList.Add("7043D");
+i7KList.Add("7044");   // 4 DI, 8 DO
+i7KList.Add("7044D");
+i7KList.Add("7045");   // 16 DO
+i7KList.Add("7045D");
+i7KList.Add("7050");  // 7 DI, 8 DO
+i7KList.Add("7050A");
+i7KList.Add("7050AD");
+i7KList.Add("7050D");
+i7KList.Add("7051");
+i7KList.Add("7051D"); // 16 DI
+i7KList.Add("7052");  // 8 DI
+i7KList.Add("7052D");
+i7KList.Add("7053");  // 16 DI
+i7KList.Add("7053D");
+i7KList.Add("7055");  // 8 DI , 8 DO
+i7KList.Add("7055D");
+i7KList.Add("7058");  // 8 DI
+i7KList.Add("7058D");
+i7KList.Add("7059");  // 8 DI
+i7KList.Add("7059D");
+i7KList.Add("7060");  // 4 DI, 4 DO
+i7KList.Add("7060D");
+i7KList.Add("7061");  // 12 DO
+i7KList.Add("7061D");
+i7KList.Add("7063");   // 8 DI, 3 DO
+i7KList.Add("7063A");
+i7KList.Add("7063AD");
+i7KList.Add("7063B");
+i7KList.Add("7063BD");
+i7KList.Add("7063D");
+i7KList.Add("7065");   // 4 DI, 5 DO
+i7KList.Add("7065A");
+i7KList.Add("7065AD");
+i7KList.Add("7065B");
+i7KList.Add("7065BD");
+i7KList.Add("7065D");
+i7KList.Add("7066");  //7 DO
+i7KList.Add("7066D");
+i7KList.Add("7067");  //7 DO
+i7KList.Add("7067D");
+i7KList.Add("7080");
+i7KList.Add("7088");
+i7KList.Add("7083");
+i7KList.Add("7083B");
+i7KList.Add("7083BD");
+i7KList.Add("7083D");
+i7KList.Add("7016");
+i7KList.Add("7021P");
+i7KList.Add("7021A");
+i7KList.Add("7084");
+i7KList.Add("7026");
+i7KList.Add("7K_List");

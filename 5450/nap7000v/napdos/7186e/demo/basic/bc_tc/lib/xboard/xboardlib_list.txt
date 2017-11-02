@@ -1,0 +1,70 @@
+/****************************************************/
+/*          Library list for 7186EX-Xboard          */
+/*                                                  */
+/*          [05, October, 2007] by Liam	            */
+/*          [11, Nov, 2010] by Nicholas	            */
+/*          [Dec 24, 2010] by Nicholas	            */
+/*          [Feb 24, 2011] by Nicholas	            */
+/*          [Jan 2, 2012] by Nicholas	            */
+/****************************************************/
+
+This folder should includes following head files and libraries.
+The files are necessary only when you use the Xboard.
+
+[Head files]
+    X107.h              2KB             2008/11/2   ==> of X107 library
+    X109.h              2KB             2008/11/2   ==> of X109 library
+    X110.h              2KB             2008/11/2   ==> of X110 library
+    X111.h              2KB             2007/8/10   ==> of X111 library
+    X116.h              2KB             2007/8/10   ==> of X116 library
+    X119.h              2KB             2008/11/2   ==> of X119 library
+    X202.h              3KB             2011/12/14  ==> of X202 library
+    X203.h              3KB             2011/12/14  ==> of X203 library
+    X303.h              4KB             2011/12/14  ==> of X303 library
+    X304.h              4KB             2011/12/14  ==> of X304 library
+    X305.h              4KB             2011/12/14  ==> of X305 library
+    X308.h              3KB             2011/12/14  ==> of X308 library
+    X310.h              5KB             2011/12/14  ==> of X310 library
+    X324.h              3KB             2008/11/2   ==> of X324 library
+    X507.h              2KB             2008/11/2   ==> of X507 library
+    X508.h              2KB             2008/11/2   ==> of X508 library
+    X509.h              2KB             2008/11/2   ==> of X509 library
+    X510.h              4KB             2008/11/2   ==> of X510 library
+    X510_128.h          4KB             2007/8/10   ==> of X510-128 library
+    X518.h              2KB             2008/11/2   ==> of X518 library
+    X519.h              2KB             2008/11/2   ==> of X519 library
+    X520.h              2KB             2010/11/11  ==> of X520 library
+    X600.h              6KB             2006/11/28  ==> of X600L library
+    X607.h              5KB             2008/11/2   ==> of X607 library
+    X608.h              5KB             2008/11/2   ==> of X608 library
+    X702.h              4KB             2011/7/20   ==> of X702 library
+    X703.h              4KB             2011/7/20   ==> of X703 library
+
+[Libraries]
+    X107.Lib            3KB             2012/1/2    ==> for X107 hardware    
+    X109.Lib            2KB             2012/1/2    ==> for X109 hardware    
+    X110.Lib            2KB             2012/1/2    ==> for X110 hardware
+    X111.Lib            2KB             2012/1/2    ==> for X111 hardware
+    X116.Lib            2KB             2012/1/2    ==> for X116 hardware
+    X119.Lib            2KB             2012/1/2    ==> for X119 hardware
+    X202.Lib            3KB             2012/1/2    ==> for X202 hardware 
+    X203.Lib            4KB             2012/1/2    ==> for X203 hardware
+    X303.Lib            5KB             2012/1/2    ==> for X303 hardware
+    X304.Lib            6KB             2012/1/2    ==> for X304 hardware
+    X305.Lib            6KB             2012/1/2    ==> for X305 hardware
+    X308.Lib            5KB             2012/1/2    ==> for X308 hardware 
+    X310.Lib            6KB             2012/1/2    ==> for X310 hardware
+    X324.Lib            4KB             2012/1/2    ==> for X324 hardware
+    X507.Lib            2KB             2012/1/2    ==> for X507 hardware
+    X508.Lib            2KB             2012/1/2    ==> for X508 hardware
+    X509.Lib            2KB             2012/1/2    ==> for X509 hardware
+    X510.Lib            4KB             2012/1/2    ==> for X510 hardware
+    X510_128.Lib        4KB             2007/10/2   ==> for X510-128 hardware
+    X518.Lib            2KB             2012/1/2    ==> for X518 hardware
+    X519.Lib            2KB             2012/1/2    ==> for X519 hardware
+    X520.Lib            3KB             2012/1/2    ==> for X520 hardware
+    X600L.Lib          16KB             2006/11/28  ==> for X560,X561,X600 & X601 hardware
+    X607.Lib            2KB             2012/1/2    ==> for X607 hardware
+    X608.Lib            2KB             2012/1/2    ==> for X608 hardware
+    X702.Lib            6KB             2012/1/2    ==> for X702 hardware
+    X703.Lib            6KB             2012/1/2    ==> for X703 hardware

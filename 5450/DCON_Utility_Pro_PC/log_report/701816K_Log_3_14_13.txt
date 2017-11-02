@@ -1,0 +1,240 @@
+下午 01:19:48-> MODULE_FIRMWARE not in support list
+下午 01:19:48-> MODULE_FIRMWARE not supported
+下午 01:19:48-> COMMUNICATE_PARAMETER not in support list
+下午 01:19:48-> COMMUNICATE_PARAMETER not supported
+下午 01:19:52-> MODULE_ADDRESS not in support list
+下午 01:19:52-> MODULE_ADDRESS not supported
+下午 01:19:52-> MODBUS_MISC not in support list
+下午 01:19:52-> MODBUS_MISC not supported
+下午 01:19:52-> MODBUS_DATAFORMAT not in support list
+下午 01:19:52-> MODBUS_DATAFORMAT not supported
+下午 01:19:52-> MODULE_TYPECODE not in support list
+下午 01:19:52-> MODULE_TYPECODE not supported
+下午 01:19:52-> RESPONSE_DELAY_TIME not in support list
+下午 01:19:52-> RESPONSE_DELAY_TIME not supported
+下午 01:19:53-> CJC_ENABLE_STATUS not in support list
+下午 01:19:53-> CJC_ENABLE_STATUS not supported
+下午 01:19:53-> MODULE_ADDRESS not in support list
+下午 01:19:53-> MODULE_ADDRESS not supported
+下午 01:19:53-> MODBUS_MISC not in support list
+下午 01:19:53-> MODBUS_MISC not supported
+下午 01:19:53-> MODBUS_DATAFORMAT not in support list
+下午 01:19:53-> MODBUS_DATAFORMAT not supported
+下午 01:19:54-> MODULE_TYPECODE not in support list
+下午 01:19:54-> MODULE_TYPECODE not supported
+下午 01:19:54-> RESPONSE_DELAY_TIME not in support list
+下午 01:19:54-> RESPONSE_DELAY_TIME not supported
+下午 01:19:54-> CH0_AI not in support list
+下午 01:19:54-> CH0_AI not supported
+下午 01:19:54-> CH1_AI not in support list
+下午 01:19:54-> CH1_AI not supported
+下午 01:19:54-> CH2_AI not in support list
+下午 01:19:54-> CH2_AI not supported
+下午 01:19:54-> CH3_AI not in support list
+下午 01:19:54-> CH3_AI not supported
+下午 01:19:54-> CH4_AI not in support list
+下午 01:19:54-> CH4_AI not supported
+下午 01:19:54-> CH5_AI not in support list
+下午 01:19:54-> CH5_AI not supported
+下午 01:19:54-> CH6_AI not in support list
+下午 01:19:54-> CH6_AI not supported
+下午 01:19:54-> CH7_AI not in support list
+下午 01:19:54-> CH7_AI not supported
+下午 01:19:54-> CH8_AI not in support list
+下午 01:19:54-> CH8_AI not supported
+下午 01:19:54-> CH9_AI not in support list
+下午 01:19:54-> CH9_AI not supported
+下午 01:19:55-> CH10_AI not in support list
+下午 01:19:55-> CH10_AI not supported
+下午 01:19:55-> CH11_AI not in support list
+下午 01:19:55-> CH11_AI not supported
+下午 01:19:55-> CH12_AI not in support list
+下午 01:19:55-> CH12_AI not supported
+下午 01:19:55-> CH13_AI not in support list
+下午 01:19:55-> CH13_AI not supported
+下午 01:19:55-> CH14_AI not in support list
+下午 01:19:55-> CH14_AI not supported
+下午 01:19:55-> CH15_AI not in support list
+下午 01:19:55-> CH15_AI not supported
+下午 01:19:55-> CJC_TEMPERATURE not in support list
+下午 01:19:55-> CJC_TEMPERATURE not supported
+下午 01:19:55-> CH0_AI not in support list
+下午 01:19:55-> CH0_AI not supported
+下午 01:19:55-> CH1_AI not in support list
+下午 01:19:55-> CH1_AI not supported
+下午 01:19:56-> CH2_AI not in support list
+下午 01:19:56-> CH2_AI not supported
+下午 01:19:56-> CH3_AI not in support list
+下午 01:19:56-> CH3_AI not supported
+下午 01:19:56-> CH4_AI not in support list
+下午 01:19:56-> CH4_AI not supported
+下午 01:19:56-> CH5_AI not in support list
+下午 01:19:56-> CH5_AI not supported
+下午 01:19:56-> CH6_AI not in support list
+下午 01:19:56-> CH6_AI not supported
+下午 01:19:56-> CH7_AI not in support list
+下午 01:19:56-> CH7_AI not supported
+下午 01:19:56-> CH8_AI not in support list
+下午 01:19:56-> CH8_AI not supported
+下午 01:19:56-> CH9_AI not in support list
+下午 01:19:56-> CH9_AI not supported
+下午 01:19:56-> CH10_AI not in support list
+下午 01:19:56-> CH10_AI not supported
+下午 01:19:56-> CH11_AI not in support list
+下午 01:19:56-> CH11_AI not supported
+下午 01:19:56-> CH12_AI not in support list
+下午 01:19:56-> CH12_AI not supported
+下午 01:19:56-> CH13_AI not in support list
+下午 01:19:56-> CH13_AI not supported
+下午 01:19:57-> CH14_AI not in support list
+下午 01:19:57-> CH14_AI not supported
+下午 01:19:57-> CH15_AI not in support list
+下午 01:19:57-> CH15_AI not supported
+下午 01:19:57-> CJC_TEMPERATURE not in support list
+下午 01:19:57-> CJC_TEMPERATURE not supported
+下午 01:19:57-> CH0_AI not in support list
+下午 01:19:57-> CH0_AI not supported
+下午 01:19:57-> CH1_AI not in support list
+下午 01:19:57-> CH1_AI not supported
+下午 01:19:57-> CH2_AI not in support list
+下午 01:19:57-> CH2_AI not supported
+下午 01:19:57-> CH3_AI not in support list
+下午 01:19:57-> CH3_AI not supported
+下午 01:19:57-> CH4_AI not in support list
+下午 01:19:57-> CH4_AI not supported
+下午 01:19:57-> CH5_AI not in support list
+下午 01:19:57-> CH5_AI not supported
+下午 01:19:57-> CH6_AI not in support list
+下午 01:19:57-> CH6_AI not supported
+下午 01:19:58-> CH7_AI not in support list
+下午 01:19:58-> CH7_AI not supported
+下午 01:19:58-> CH8_AI not in support list
+下午 01:19:58-> CH8_AI not supported
+下午 01:19:58-> CH9_AI not in support list
+下午 01:19:58-> CH9_AI not supported
+下午 01:19:58-> CH10_AI not in support list
+下午 01:19:58-> CH10_AI not supported
+下午 01:19:58-> CH11_AI not in support list
+下午 01:19:58-> CH11_AI not supported
+下午 01:19:58-> CH12_AI not in support list
+下午 01:19:58-> CH12_AI not supported
+下午 01:19:58-> CH13_AI not in support list
+下午 01:19:58-> CH13_AI not supported
+下午 01:19:58-> CH14_AI not in support list
+下午 01:19:58-> CH14_AI not supported
+下午 01:19:58-> CH15_AI not in support list
+下午 01:19:58-> CH15_AI not supported
+下午 01:19:58-> CJC_TEMPERATURE not in support list
+下午 01:19:58-> CJC_TEMPERATURE not supported
+下午 01:19:58-> CH0_AI not in support list
+下午 01:19:58-> CH0_AI not supported
+下午 01:19:58-> CH1_AI not in support list
+下午 01:19:58-> CH1_AI not supported
+下午 01:19:58-> CH2_AI not in support list
+下午 01:19:58-> CH2_AI not supported
+下午 01:19:59-> CH3_AI not in support list
+下午 01:19:59-> CH3_AI not supported
+下午 01:19:59-> CH4_AI not in support list
+下午 01:19:59-> CH4_AI not supported
+下午 01:19:59-> CH5_AI not in support list
+下午 01:19:59-> CH5_AI not supported
+下午 01:19:59-> CH6_AI not in support list
+下午 01:19:59-> CH6_AI not supported
+下午 01:19:59-> CH7_AI not in support list
+下午 01:19:59-> CH7_AI not supported
+下午 01:19:59-> CH8_AI not in support list
+下午 01:19:59-> CH8_AI not supported
+下午 01:19:59-> CH9_AI not in support list
+下午 01:19:59-> CH9_AI not supported
+下午 01:19:59-> CH10_AI not in support list
+下午 01:19:59-> CH10_AI not supported
+下午 01:19:59-> CH11_AI not in support list
+下午 01:19:59-> CH11_AI not supported
+下午 01:19:59-> CH12_AI not in support list
+下午 01:19:59-> CH12_AI not supported
+下午 01:19:59-> CH13_AI not in support list
+下午 01:19:59-> CH13_AI not supported
+下午 01:19:59-> CH14_AI not in support list
+下午 01:19:59-> CH14_AI not supported
+下午 01:20:00-> CH15_AI not in support list
+下午 01:20:00-> CH15_AI not supported
+下午 01:20:00-> CJC_TEMPERATURE not in support list
+下午 01:20:00-> CJC_TEMPERATURE not supported
+下午 01:20:00-> CH0_AI not in support list
+下午 01:20:00-> CH0_AI not supported
+下午 01:20:00-> CH1_AI not in support list
+下午 01:20:00-> CH1_AI not supported
+下午 01:20:00-> CH2_AI not in support list
+下午 01:20:00-> CH2_AI not supported
+下午 01:20:00-> CH3_AI not in support list
+下午 01:20:00-> CH3_AI not supported
+下午 01:20:00-> CH4_AI not in support list
+下午 01:20:00-> CH4_AI not supported
+下午 01:20:00-> CH5_AI not in support list
+下午 01:20:00-> CH5_AI not supported
+下午 01:20:02-> CH6_AI not in support list
+下午 01:20:02-> CH6_AI not supported
+下午 01:20:02-> CH7_AI not in support list
+下午 01:20:02-> CH7_AI not supported
+下午 01:20:02-> CH8_AI not in support list
+下午 01:20:02-> CH8_AI not supported
+下午 01:20:02-> CH9_AI not in support list
+下午 01:20:02-> CH9_AI not supported
+下午 01:20:02-> CH10_AI not in support list
+下午 01:20:02-> CH10_AI not supported
+下午 01:20:02-> CH11_AI not in support list
+下午 01:20:02-> CH11_AI not supported
+下午 01:20:02-> CH12_AI not in support list
+下午 01:20:02-> CH12_AI not supported
+下午 01:20:02-> CH13_AI not in support list
+下午 01:20:02-> CH13_AI not supported
+下午 01:20:02-> CH14_AI not in support list
+下午 01:20:02-> CH14_AI not supported
+下午 01:20:02-> CH15_AI not in support list
+下午 01:20:02-> CH15_AI not supported
+下午 01:20:02-> CJC_TEMPERATURE not in support list
+下午 01:20:02-> CJC_TEMPERATURE not supported
+下午 01:20:03-> CH0_AI not in support list
+下午 01:20:03-> CH0_AI not supported
+下午 01:20:03-> CH1_AI not in support list
+下午 01:20:03-> CH1_AI not supported
+下午 01:20:03-> CH2_AI not in support list
+下午 01:20:03-> CH2_AI not supported
+下午 01:20:03-> CH3_AI not in support list
+下午 01:20:03-> CH3_AI not supported
+下午 01:20:03-> CH4_AI not in support list
+下午 01:20:03-> CH4_AI not supported
+下午 01:20:03-> CH5_AI not in support list
+下午 01:20:03-> CH5_AI not supported
+下午 01:20:03-> CH6_AI not in support list
+下午 01:20:03-> CH6_AI not supported
+下午 01:20:03-> CH7_AI not in support list
+下午 01:20:03-> CH7_AI not supported
+下午 01:20:03-> CH8_AI not in support list
+下午 01:20:03-> CH8_AI not supported
+下午 01:20:03-> CH9_AI not in support list
+下午 01:20:03-> CH9_AI not supported
+下午 01:20:03-> CH10_AI not in support list
+下午 01:20:03-> CH10_AI not supported
+下午 01:20:03-> CH11_AI not in support list
+下午 01:20:03-> CH11_AI not supported
+下午 01:20:03-> CH12_AI not in support list
+下午 01:20:03-> CH12_AI not supported
+下午 01:20:04-> CH13_AI not in support list
+下午 01:20:04-> CH13_AI not supported
+下午 01:20:04-> CH14_AI not in support list
+下午 01:20:04-> CH14_AI not supported
+下午 01:20:04-> CH15_AI not in support list
+下午 01:20:04-> CH15_AI not supported
+下午 01:20:04-> RESPONSE_DELAY_TIME not in support list
+下午 01:20:04-> RESPONSE_DELAY_TIME not supported
+下午 01:20:04-> RESPONSE_DELAY_TIME not in support list
+下午 01:20:04-> RESPONSE_DELAY_TIME not supported
+下午 01:20:04-> MODBUS_MISC not in support list
+下午 01:20:04-> MODBUS_MISC not supported
+下午 01:20:04-> MODBUS_DATAFORMAT not in support list
+下午 01:20:04-> MODBUS_DATAFORMAT not supported
+下午 01:20:06-> COMMUNICATE_PARAMETER not in support list
+下午 01:20:06-> COMMUNICATE_PARAMETER not supported
+下午 01:20:08-> CJC_TEMPERATURE not in support list
+下午 01:20:08-> CJC_TEMPERATURE not supported

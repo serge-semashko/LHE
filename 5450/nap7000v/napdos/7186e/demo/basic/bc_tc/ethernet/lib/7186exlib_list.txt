@@ -1,0 +1,18 @@
+/****************************************************/
+/*      Library list for uPAC-7186EX                */
+/*                                                  */
+/*           [Jan, 03, 2010] by Liam                */
+/*           [04, June, 2010] by Nicholas           */
+/*           [Aug,3, 2011] by Nicholas              */
+/*           [Dec,26, 2011] by Nicholas             */
+/****************************************************/
+
+This folder should includes following head files and libraries
+
+[Head files]
+    7186E.H        46.9KB         2011/12/07    ==> for 7186EX library
+    Tcpip32.H      43.9KB         2010/06/07    ==> for TCP/IP library
+
+[Libraries]
+    7186EL.LIB    204KB         2011/12/07    ==> for 7188EX hardware
+    Tcp_dm32.lib   83.5KB         2010/11/17    ==> TCP/IP library for 7186EX

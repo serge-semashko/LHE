@@ -1,0 +1,14 @@
+del *.pdb
+del *.bak
+del *.csv
+del iomodule.dll
+del protocol.dll
+del utility.dll
+del CommuIO.dll
+del platform.dll
+del autoConfig.dll
+del system*
+del Logger.dll
+del Logger_W32.dll
+del UI_I8084.dll
+del DALI.dll

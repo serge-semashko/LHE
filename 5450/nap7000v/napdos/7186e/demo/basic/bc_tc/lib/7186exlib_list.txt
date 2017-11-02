@@ -1,0 +1,27 @@
+/****************************************************/
+/*      Library list for uPAC-7186EX-Xboard         */
+/*                                                  */
+/*           [Dec, 26, 2011] by Nicholas            */
+/****************************************************/
+
+This folder should includes following head files and libraries
+
+[Head files]
+    7186E.H        46.9KB         2011/12/07    ==> for 7186EX library
+
+[Libraries]
+    7186EL.LIB      204KB         2011/12/07    ==> for 7186EX hardware
+
+/****************************************************/
+/*      Library list for uPAC-7186EX-Xboard         */
+/*                                                  */
+/*           [Jan, 03, 2010] by Liam                */
+/****************************************************/
+
+This folder should includes following head files and libraries
+
+[Head files]
+    7186E.H        46KB         2009/08/31    ==> for 7186EX library
+
+[Libraries]
+    7186EL.LIB    192KB         2009/09/15    ==> for 7188EX hardware
