@@ -189,7 +189,6 @@ begin
  startTime := now;
  startTime := now;
  while (now - StartTime)*24*3600 <4 do application.ProcessMessages;
- PortNum:=9090;
  HTTPsrv:=TTCPHttpDaemon.create;
 (*
   ObjFileName := application.ExeName+'.jdata';
@@ -458,7 +457,7 @@ begin
    Application.Terminate; // or: Close;
    exit;
  end;
-  if ((now-LastIncomeConnection)*24*60*60>120)   then
+  if ((now-LastIncomeConnection)*24*60*60>300)   then
  begin
   writetimelog('#### restart application reason: No income conenction for 2 min ############################################');
 
@@ -505,7 +504,7 @@ begin
        jsonstr:=jsonstr+memobody.Lines[i];
     end;
     jsonstr:=jsonstr+copy(memobody.Lines[memobody.Lines.Count-1],1,length(jsonstr)-1);
-    CurrentData :=jsonstr;
+//    CurrentData :=jsonstr;
     if ((now-prevUpdate)*24*3600<30) then begin
       timer1.Enabled:=true;
       exit;
@@ -573,6 +572,7 @@ begin
       inc(h);
       memo2.Lines[memo2.Lines.Count-1]:=memo2.Lines[memo2.Lines.Count-1]+' fin';
     end;
+    CurrentData:= tlkjson.GenerateText(data);
     Data.Free;
   finally
     HTTP.Free;

@@ -519,8 +519,8 @@ window.onload = function () {
         hostname = dloc.hostname;
     }
     console.log(hostname + " ");
-    url = "http://" + hostname + ":9090/get_data&callback=?";
-    histurl = "http://" + hostname + ":9090/get_hist=1&callback=?";
+    url = "http://" + hostname + ":9080/get_data&callback=?";
+    histurl = "http://" + hostname + ":9080/get_hist=1&callback=?";
  
    //    getAllData();
     console.log(url);
