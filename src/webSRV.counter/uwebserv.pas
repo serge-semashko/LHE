@@ -66,7 +66,7 @@ type
     function ProcessHttpRequest(Request, URI: string): integer;
   end;
 var
-PortNum :integer = 9090;
+PortNum :integer = 9080;
 textfromjson :string ='[]';
 currentData :string = '{}';
 testjson : string ='[{"time":"18:57:40","sbrkgu1":0,"sbrkgu2":0,"k1t6":272.73,"k1t12":295.05,"k1t13":288.41,"k1dt5t6":12.15,"k1dt3t4":2.73,"k1sbr":0,'+
@@ -396,7 +396,7 @@ var
   pointpos: integer;
   resrecord :string;
   wret :word;
-  dtime , freq:double;
+  dtime :double;
 
    FullProgPath: PChar;
    systime :_systemtime;
@@ -428,6 +428,8 @@ var
          then skgu_freq[kgunum, chnum] := skgu_freq[kgunum, chnum] + kgu_freq[kgunum, chnum]
          else skgu_freq[kgunum, chnum] := skgu_freq[kgunum, chnum] + kgu_freqhist[kgunum, chnum, i1];
     end;
+    skgu_freq[kgunum, chnum] := skgu_freq[kgunum, chnum] / 10;
+
     kgu_sumx[kgunum, chnum] := kgu_sumx[kgunum, chnum] + kgu_freq[kgunum, chnum];
     kgu_sumx2[kgunum, chnum] := kgu_sumx2[kgunum, chnum] + kgu_freq[kgunum, chnum] * kgu_freq[kgunum, chnum];
     if (nsum > 2) then begin
@@ -471,6 +473,8 @@ begin
    for chnum := 0 to 7 do read_counter_and_reset(1, chnum);
    nsum := nsum+1;
 
+  kgu1freqtxt.Caption := format('Freq = %.2f', [skgu_freq[0,1]*2]);
+  kgu2freqtxt.Caption := format('Freq = %.2f', [skgu_freq[0,1]*2]);
 
 
 
